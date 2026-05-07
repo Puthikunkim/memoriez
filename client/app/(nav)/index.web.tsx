@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-        
+
 import { useRouter } from 'expo-router';
 import Map, { Marker } from 'react-map-gl';
 
