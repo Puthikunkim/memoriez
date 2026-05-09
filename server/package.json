@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "docker start postgres-test || docker run -d --name postgres-test -e POSTGRES_PASSWORD=test -p 5433:5432 postgres",
+    "pretest": "node -e \"if (!process.env.CI) { const {execSync} = require('child_process'); try { execSync('docker start postgres-test', {stdio:'inherit'}) } catch { execSync('docker run -d --name postgres-test -e POSTGRES_PASSWORD=test -p 5433:5432 postgres', {stdio:'inherit'}) } }\"",
     "test": "dotenv -e .env.test -- prisma migrate deploy && dotenv -e .env.test -- vitest run",
     "test:watch": "dotenv -e .env.test -- vitest",
     "lint": "eslint src/**/*.ts",
