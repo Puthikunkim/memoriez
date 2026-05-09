@@ -55,10 +55,10 @@ describe('GET /api/memories/:id', () => {
     expect(res.body.id).toBe(memory.id);
   });
 
-  it('returns 404 for another users memory', async () => {
+  it('returns 404 for another users private memory', async () => {
     await seedUser(U1, 'u1@test.com');
     await seedUser(U2, 'u2@test.com');
-    const memory = await seedMemory(U2);
+    const memory = await seedMemory(U2, { visibility: 'private' });
     const res = await authed(U1).get(`/api/memories/${memory.id}`);
     expect(res.status).toBe(404);
   });
