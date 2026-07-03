@@ -4,6 +4,23 @@ Memoriez is a full-stack travel memory app built by **Drake Glazers** for **COMP
 
 The app lets users capture memories tied to real-world locations, attach media, control visibility, view memories on an interactive map, save memories into collections, manage friends, and receive memory anniversary notifications.
 
+<table>
+  <tr>
+    <td><img width="420" height="911" src="https://github.com/user-attachments/assets/640860e5-c840-42e0-b8dd-85d121126060" /></td>
+    <td><img width="420" height="911" src="https://github.com/user-attachments/assets/dd35ef7d-f4e3-48dd-915f-9d5e071232ff" /></td>
+    <td><img width="420" height="911" src="https://github.com/user-attachments/assets/68db48e4-ca2b-42c4-90f8-0290c330033e" /></td>
+  </tr>
+  <tr>
+    <td><img width="420" height="911" src="https://github.com/user-attachments/assets/6e3c561c-8edc-4cb1-93a1-62e83a9b3b10" /></td>
+    <td><img width="420" height="911" src="https://github.com/user-attachments/assets/5e8a833b-eb62-43e8-86f2-07197582c4ee" /></td>
+    <td><img width="420" height="911" src="https://github.com/user-attachments/assets/195ffd24-e5ff-45d2-9c23-ba9a714c09d9" /></td>
+  </tr>
+</table>
+
+
+
+
+
 ## Implemented Features
 
 Memoriez implements the core user stories for recording, revisiting, and sharing travel memories:
